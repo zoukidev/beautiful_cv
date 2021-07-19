@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melvin Chabin</title>
+    <link rel="stylesheet" href="./scss/style.scss">
+</head>
+<body>
+    <div id="app" class="container">
+
+        <div class="panel" style="display: flex;justify-content: center;align-items: center;">
+            <div style="width: 600px;">
+                <h1>{{ fullname }}</h1>
+                <!-- <h3>Web Developper Fullstack</h3> -->
+                <h3>Développeur web fullstask</h3>
+                <p class="presentation">{{ description }}</p>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="panel">
+            <h2 style="width: 40%;">🎓 Éducation</h2>
+            <div class="card shadow" style="margin: auto;margin-top: 20px;" v-for="edu in educations">
+                <div class="card-header">
+                    <h2>{{ edu.title }}</h2>
+                </div>
+                <div class="card-body">
+                    <p>{{ edu.desc }}</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experiences -->
+        <div class="panel">
+            <h2 style="width: 40%;">🧪 Expériences</h2>
+            <div class="card shadow" style="margin: auto;margin-top: 20px;" v-for="exp in experiences">
+                <div class="card-header">
+                    <h2>{{ exp.title }}</h2>
+                </div>
+                <div class="card-body">
+                    <p>{{ exp.desc }}</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <!-- <div class="panel">
+            <h2 style="width: 40%;">🎒 Projets</h2>
+            <div class="card shadow" style="margin: auto;margin-top: 20px;" v-for="project in projects">
+                <div class="card-body">
+                    <div id="react-projects">
+                        <div class="component" style="height: 100%; margin: auto; display: flex; flex-wrap: wrap; justify-content: center;">
+                            <div class="card-project">
+                                <div class="card-header">
+                                    Onset Lua <span class="badge">500+ Téléchargements</span>
+                                </div>
+                                <div class="card-body">
+                                    <p>VSCode extension for Onset game.</p>
+                                    <div class="badges badges-lang">
+                                        <p>Langages</p>
+                                        <span class="badge snippet">Snippet</span>
+                                    </div>
+                                    <ul style="padding: 0px 0px 0px 20px;">
+                                        <li class="title" style="list-style-type: none; margin-left: -20px;">Liens</li>
+                                        <li><a href="https://web.archive.org/web/20200521155355/https://github.com/zoukidev/vscode-olua" target="_blank">github</a></li>
+                                        <li><a href="https://web.archive.org/web/20200521155355/https://marketplace.visualstudio.com/items?itemName=zoukidev.vscode-olua" target="_blank">vscode</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Projects -->
+        <!-- <div class="panel">
+            <div class="card shadow" style="margin: auto;margin-top: 20px;">
+                <div class="card-header">
+                    <h2>🎒 Projets</h2>
+                </div>
+                <div class="card-body">
+                    <div id="react-projects">
+                        <div class="component" style="height: 100%; margin: auto; display: flex; flex-wrap: wrap; justify-content: center;">
+                            <div class="card-project">
+                                <div class="card-header">
+                                    Onset Lua <span class="badge">500+ Téléchargements</span>
+                                </div>
+                                <div class="card-body">
+                                    <p>VSCode extension for Onset game.</p>
+                                    <div class="badges badges-lang">
+                                        <p>Langages</p>
+                                        <span class="badge snippet">Snippet</span>
+                                    </div>
+                                    <ul style="padding: 0px 0px 0px 20px;">
+                                        <li class="title" style="list-style-type: none; margin-left: -20px;">Liens</li>
+                                        <li><a href="https://web.archive.org/web/20200521155355/https://github.com/zoukidev/vscode-olua" target="_blank">github</a></li>
+                                        <li><a href="https://web.archive.org/web/20200521155355/https://marketplace.visualstudio.com/items?itemName=zoukidev.vscode-olua" target="_blank">vscode</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Skills -->
+        <div class="panel">
+            <h2 style="width: 40%;">🚀 Compétences & Technologies</h2>
+            <div class="card shadow" style="margin: auto;margin-top: 20px;">
+                <div class="card-body">
+                    <div class="badges badges-lang">
+                        <span class="badge" v-for="lang in languages">{{ lang.name }}</span>
+                    </div>
+                    <div class="badges badges-techno">
+                        <span class="badge" v-for="techno in technologies">{{ techno.name }}</span>
+                    </div>
+                    <!-- <div class="badges badges-os">
+                        <span class="badge">Windows</span>
+                        <span class="badge">Linux</span>
+                        <span class="badge">Mac</span>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Contacts -->
+        <div class="panel">
+            <h2 style="width: 40%;">📧 Contacts</h2>
+            <div class="card shadow" style="margin: auto;margin-top: 20px;">
+                <div class="card-body">
+                    <ul class="contact">
+                        <li v-for="contact in contacts"><a href="#">{{ contact }}</a></li>
+                        <!-- <li><a href="https://web.archive.org/web/20200830014024/mailto:zouki.dev@gmail.com">zouki.dev@gmail.com</a></li>
+                        <li><a href="https://web.archive.org/web/20200830014024/tel:07.88.11.15.29">07.88.11.15.29</a></li>
+                        <li><a href="https://web.archive.org/web/20200830014024/https://github.com/zoukidev" target="_blank">github.com/zoukidev</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="panel">
+            <p style="text-align: center;margin: 20px auto;color: #6b6b6b;">© Melvin Chabin</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="./scripts/app.js"></script>
+</body>
+</html>
