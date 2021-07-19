@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Melvin Chabin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./scss/style.scss">
 </head>
 <body>
@@ -12,8 +13,8 @@
         <!-- Presentation -->
         <div class="panel" style="display: flex;justify-content: center;align-items: center;">
             <div style="width: 600px;">
-                <h1>{{ fullname }}</h1>
-                <h3>Développeur web fullstask</h3>
+                <h1 class="animate__animated animate__backInLeft">{{ fullname }}</h1>
+                <h3 class="animate__animated animate__backInRight">Développeur web fullstask</h3>
                 <p class="presentation">{{ description }}</p>
             </div>
         </div>
@@ -132,7 +133,7 @@
             <div class="card shadow" style="margin: auto;margin-top: 20px;">
                 <div class="card-body">
                     <ul class="contact">
-                        <li v-for="contact in contacts"><a href="#">{{ contact }}</a></li>
+                        <li v-for="contact in contacts">{{ contact }}</li>
                         <!-- <li><a href="https://web.archive.org/web/20200830014024/mailto:zouki.dev@gmail.com">zouki.dev@gmail.com</a></li>
                         <li><a href="https://web.archive.org/web/20200830014024/tel:07.88.11.15.29">07.88.11.15.29</a></li>
                         <li><a href="https://web.archive.org/web/20200830014024/https://github.com/zoukidev" target="_blank">github.com/zoukidev</a></li> -->

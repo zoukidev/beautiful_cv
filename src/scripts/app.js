@@ -19,16 +19,16 @@ var app = new Vue({
         ],
         experiences: [
             {
-                title: 'UgoFresh - Développeur Frontend - 1 ans',
+                title: 'UgoFresh - Développeur Frontend - 16 Mois',
                 desc: "Développer un Interface Administrateur, afin de faciliter l'ajout de nouveaux clients.\nCréer une librairie JavaScript personnalisable pour facilité l'intégration du ChatBot sur les sites des différents clients."
             },
             {
-                title: 'HelloMyBot - Développeur Frontend - 3 mois',
+                title: 'HelloMyBot - Développeur Frontend - 3 Mois',
                 desc: "Développer un Interface Administrateur, afin de faciliter l'ajout de nouveaux clients.\nCréer une librairie JavaScript personnalisable pour facilité l'intégration du ChatBot sur les sites des différents clients."
             },
             {
                 title: 'Euresto - Développeur Web Fullstack - 3 Mois',
-                desc: "Développer un système de widgets et le mettre en place sur l'application EURESTO.\nParticiper à l'intégration coté serveur afin de rendre le tout fonctionnel."
+                desc: "Développer un système de widgets et le mettre en place sur l'application EURESTO.\nParticiper à l'intégration côté serveur afin de rendre le tout fonctionnel."
             }
         ],
         languages: [
