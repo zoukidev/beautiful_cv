@@ -36,6 +36,16 @@ h3 {
 	background-color: #fff !important;
 	border-radius: 4px;
 	margin-bottom: 20px !important;
+	-webkit-transition: all 0.4;
+	transition: all 0.4s;
+
+	&.interact {
+		&:hover {
+			width: calc(600px - 20px - 12px);
+			// width: calc(620px - 20px);
+			border-left: 6px solid #f1c40f;
+		}
+	}
 
 	.card-header {
 		h1 {
@@ -139,9 +149,9 @@ h3 {
 	color: #fff;
 	border-radius: 2px;
 	font-size: 12px;
-	-webkit-transition: all .01s;
-	transition: all .01s;
-	cursor: default;
+	-webkit-transition: all .04s;
+	transition: all .04s;
+	cursor: pointer;
 
 	&:hover {
 		-webkit-transform: rotate(5deg);
