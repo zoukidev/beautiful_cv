@@ -19,11 +19,11 @@ var app = new Vue({
         ],
         experiences: [
             {
-                title: 'UgoFresh - Développeur Frontend - 16 Mois',
+                title: 'UgoFresh - Développeur Frontend - 2 ans',
                 desc: "Développer un Interface Administrateur, afin de faciliter l'ajout de nouveaux clients.\nCréer une librairie JavaScript personnalisable pour facilité l'intégration du ChatBot sur les sites des différents clients."
             },
             {
-                title: 'HelloMyBot - Développeur Frontend - 3 Mois',
+                title: 'HelloMyBot - Développeur Frontend - 6 Mois',
                 desc: "Développer un Interface Administrateur, afin de faciliter l'ajout de nouveaux clients.\nCréer une librairie JavaScript personnalisable pour facilité l'intégration du ChatBot sur les sites des différents clients."
             },
             {
