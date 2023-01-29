@@ -1,0 +1,53 @@
+
+.badges {
+	margin: 10px 0;
+}
+.badge {
+	display: inline-block;
+	padding: 1px 10px;
+	margin: 2px 4px;
+	color: #fff;
+	border-radius: 2px;
+	font-size: 12px;
+	-webkit-transition: all .04s;
+	transition: all .04s;
+	cursor: pointer;
+
+	&:hover {
+		-webkit-transform: rotate(5deg);
+		transform: rotate(5deg);
+	}
+}
+.badge.snippet {
+	background-color: #8e44ad !important;
+}
+.badge.html {
+	background-color: #f39c12 !important;
+}
+.badge.javascript {
+	background-color: #27ae60 !important;
+}
+.badge.typescript {
+	background-color: #4a4fa3 !important;
+}
+.badge.css {
+	background-color: #c0392b !important;
+}
+.badge.csharp {
+	background-color: #686de0 !important;
+}
+.badges-lang {
+	.badge {
+		background-color: #f39c12;
+	}
+}
+.badges-techno {
+	.badge {
+		background-color: #686de0;
+	}
+}
+.badges-os {
+	.badge {
+		background-color: #4a4fa3;
+	}
+}
