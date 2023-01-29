@@ -7,7 +7,7 @@
 	border: none;
 	-webkit-transition: all .1s;
 	transition: all .1s;
-	border-radius: 2px;
+	border-radius: $btn-border-radius;
 }
 .btn-primary {
 	background-color: #c0392b;

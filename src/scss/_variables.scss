@@ -1,2 +1,30 @@
-
+// Colors
 $bg-color: #ecf0f1;
+
+// Border radius
+$border-radius: 2px;
+$btn-border-radius: $border-radius;
+$badge-border-radius: $border-radius;
+$card-border-radius: 4px;
+
+// Maps
+$badge-map: (
+    "snippet": #8e44ad,
+    "html": #f39c12,
+    "javascript": #27ae60,
+    "typescript": #4a4fa3,
+    "css": #c0392b,
+    "csharp": #686de0,
+);
+
+$badges-map: (
+    "lang": #f39c12,
+    "techno": #686de0,
+    "os": #4a4fa3,
+);
+
+$badges-map: (
+    "lang": #f39c12,
+    "techno": #686de0,
+    "os": #4a4fa3,
+);
